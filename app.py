@@ -238,7 +238,7 @@ elif step == 2:
 
     internship_data = None
     if has_internship == "Yes":
-        st.write("✅ You selected **Yes** – please fill your main internship details below.")
+        st.write(" You selected **Yes** – please fill your main internship details below.")
 
         ic1, ic2, ic3 = st.columns(3)
         with ic1:
@@ -341,7 +341,7 @@ elif step == 3:
     source_internship_id = None
 
     if has_job == "Yes":
-        st.write("✅ You selected **Yes** – please enter your job details below.")
+        st.write("You selected **Yes** – please enter your job details below.")
 
         jc1, jc2, jc3 = st.columns(3)
         with jc1:
@@ -415,7 +415,7 @@ elif step == 3:
     with col_back:
         back_clicked = st.button("⬅ Back", key="back_step3")
     with col_submit:
-        submit_clicked = st.button("✅ Submit to ESB Database", key="submit_step3")
+        submit_clicked = st.button(" Submit to ESB Database", key="submit_step3")
 
     if back_clicked:
         st.session_state.step = 2
@@ -543,7 +543,7 @@ elif step == 3:
                         job["source_internship_id"],
                     )
 
-                st.success("✅ Record saved to ESB database. Thank you for submitting your journey!")
+                st.success("Record saved to ESB database. Thank you for submitting your journey!")
 
                 # Reset for a new entry
                 st.session_state.step = 1
